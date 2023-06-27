@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('upload-employee-attendance',[Attendance::class,'UploadAttendance']);
+Route::get('working-hours',[Attendance::class,'WorkingHours']);
